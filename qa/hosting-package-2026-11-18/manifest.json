@@ -1,0 +1,435 @@
+{
+  "archive": "babushka-hosting-2026-11-18.zip",
+  "bytes": 55999659,
+  "unpacked_bytes": 57299171,
+  "file_count": 85,
+  "currency_icons": 49,
+  "sha256": "873e54cbf6baa7fce5fdc0dedc46d62fd6bd3f1db43937faea989c523517848f",
+  "files": [
+    {
+      "path": "assets/background-music.mp3",
+      "bytes": 7560101,
+      "sha256": "9a41c401b677ce3a13d918694116ead62571bbbdcbcaccf5e9c36b571586498c"
+    },
+    {
+      "path": "assets/currencies/atelier/AED.webp",
+      "bytes": 12668,
+      "sha256": "0f15e1a301531ada280efea69e17a65b94e248489efc7e0a63b31b3a1d20fa1d"
+    },
+    {
+      "path": "assets/currencies/atelier/ALIPAY.webp",
+      "bytes": 12068,
+      "sha256": "bc0c2dedb19650283baee7d29e08404ce9b4e160ab6f63d232a5b1432dadba3d"
+    },
+    {
+      "path": "assets/currencies/atelier/AMD.webp",
+      "bytes": 13346,
+      "sha256": "f2e1323479876daa2ee9210b486251b4468535786e95818270468bfcd3f928e0"
+    },
+    {
+      "path": "assets/currencies/atelier/ARS.webp",
+      "bytes": 13388,
+      "sha256": "7a852feb964467f2e3459b29a0dd7e06dc34e3962b1ef5c3a6b7e7057fd8c797"
+    },
+    {
+      "path": "assets/currencies/atelier/AUD.webp",
+      "bytes": 12354,
+      "sha256": "08351b91e0afacf21d2711d869c91a00033f1a8ba4f10598e604b4e5b7cdb9dc"
+    },
+    {
+      "path": "assets/currencies/atelier/AZN.webp",
+      "bytes": 12700,
+      "sha256": "8a65d2e9eec0f49e14c0e8b2ca682e7349b5f47b5638c53a93f9319941a06e4b"
+    },
+    {
+      "path": "assets/currencies/atelier/BANK_CNY.webp",
+      "bytes": 21866,
+      "sha256": "f5e437a5c76b67c861c25d0874dde1b998c77ae2fb9d5d805877cb8414f58600"
+    },
+    {
+      "path": "assets/currencies/atelier/BANK_KRW.webp",
+      "bytes": 22182,
+      "sha256": "cc12410a9b87e210bf482f76777c0923564f2c162ff1b353ed6ce2f9278b63d8"
+    },
+    {
+      "path": "assets/currencies/atelier/BANK_PLN.webp",
+      "bytes": 17844,
+      "sha256": "63c4ad4b9423026255ce445c540343da83577a6cd712d418e141860c04b90e74"
+    },
+    {
+      "path": "assets/currencies/atelier/BANK_USD.webp",
+      "bytes": 17972,
+      "sha256": "9e7edb80581f3354bc779dbd5b1a2d8e63d65bec7da7e5566d79c88f1a4ef8ff"
+    },
+    {
+      "path": "assets/currencies/atelier/BGN.webp",
+      "bytes": 13156,
+      "sha256": "0d7bf31dfb561e80117ac28c53ab82c4b95c6088c2c268538f8cdf019974f7ae"
+    },
+    {
+      "path": "assets/currencies/atelier/BRL.webp",
+      "bytes": 12606,
+      "sha256": "26a9a7c43214f24fb1dc25d6a698ef6bdcbdb91d15bad10698594a7d4231ee35"
+    },
+    {
+      "path": "assets/currencies/atelier/BTC.webp",
+      "bytes": 17830,
+      "sha256": "c8e1854b17c92d14e8de72b46dfccfaac78a2d8473e56ecdce3e5496f5d8ca22"
+    },
+    {
+      "path": "assets/currencies/atelier/CAD.webp",
+      "bytes": 13634,
+      "sha256": "9d5e47e15f8fba5e6ed9dfd43101f12a1e5cb63dc08623a8c45aea08cd575119"
+    },
+    {
+      "path": "assets/currencies/atelier/CARD_CNY.webp",
+      "bytes": 12582,
+      "sha256": "098cbef38d8f1e55b0ef2f2e0a5e700d4d30287b33ca32725c996bfd135e3f8d"
+    },
+    {
+      "path": "assets/currencies/atelier/CHF.webp",
+      "bytes": 12616,
+      "sha256": "a2daf829c320b421d46c50fcf94e9500a08603f8040c41a8ce75e033111aa231"
+    },
+    {
+      "path": "assets/currencies/atelier/CNY.webp",
+      "bytes": 13310,
+      "sha256": "e7a570cc20a77f19b79fd603ed3ef56fbeaf3cd8ef06a881d2345a2788057c68"
+    },
+    {
+      "path": "assets/currencies/atelier/COP.webp",
+      "bytes": 12498,
+      "sha256": "2d7ee9679e89b6b0f5af5967f7a5e59121a6adb82a82860380c7d1cba4dd3987"
+    },
+    {
+      "path": "assets/currencies/atelier/CORP_EUR.webp",
+      "bytes": 17156,
+      "sha256": "e25a7d23f9a9f3da475e14a1941e017828233797ef9145367db08a73a35a496b"
+    },
+    {
+      "path": "assets/currencies/atelier/CORP_USD.webp",
+      "bytes": 16020,
+      "sha256": "7ecf93cbe62b203973dd7925986e6ae662478480d828c9544085ccf527c7e0d0"
+    },
+    {
+      "path": "assets/currencies/atelier/CZK.webp",
+      "bytes": 13274,
+      "sha256": "5d9609dcef87d1c3808562c270e6cffaab998df981e75efc76bf3a85a80de4c9"
+    },
+    {
+      "path": "assets/currencies/atelier/ETH.webp",
+      "bytes": 20434,
+      "sha256": "80ceeae8b5eb57f0cabc696e876d157106a5eaebe6d2353aa2d0c590017c691f"
+    },
+    {
+      "path": "assets/currencies/atelier/EUR.webp",
+      "bytes": 12170,
+      "sha256": "711981b17944487885791fb151c3282217fbfa46c248fd4f590ec33f193f75db"
+    },
+    {
+      "path": "assets/currencies/atelier/GBP.webp",
+      "bytes": 11972,
+      "sha256": "9d2607b6d2d34670d5e29d5955e92a9f69d9a62fc42629612ec8a181766999fd"
+    },
+    {
+      "path": "assets/currencies/atelier/IDR.webp",
+      "bytes": 11968,
+      "sha256": "91d2d3838fc6c6e3331907f6ef1da3bd864b4f32fdf37904a03fc1c0f29cdb0e"
+    },
+    {
+      "path": "assets/currencies/atelier/INR.webp",
+      "bytes": 12404,
+      "sha256": "598a1d67172dd5426a8290390903b4abcafffa7c9356defd9641c8ff56f26dff"
+    },
+    {
+      "path": "assets/currencies/atelier/JPY.webp",
+      "bytes": 12800,
+      "sha256": "f1fd7d6891084ae136b755c22af1034aa31d15e60dd6e7310f3bdf1d63738393"
+    },
+    {
+      "path": "assets/currencies/atelier/KGS.webp",
+      "bytes": 13102,
+      "sha256": "716384ab4172d121bbdc78860dd6d026947cf93fea52d0b527b28c8ad59bd619"
+    },
+    {
+      "path": "assets/currencies/atelier/KRW.webp",
+      "bytes": 13242,
+      "sha256": "dcd11813b7c9586449ed3bad9fde014bdcbcd0bca0106541ae956eb02887c838"
+    },
+    {
+      "path": "assets/currencies/atelier/KZT.webp",
+      "bytes": 13768,
+      "sha256": "8384d8cc0ffdce6b40da1265976ae9500a3b00f240b9d7ede55652c5eea72a17"
+    },
+    {
+      "path": "assets/currencies/atelier/MDL.webp",
+      "bytes": 12522,
+      "sha256": "5906e6263f1574aaa19ff22bc5d43e04bf9135a03d167a1d75c3ab9a294bf235"
+    },
+    {
+      "path": "assets/currencies/atelier/MXN.webp",
+      "bytes": 13212,
+      "sha256": "97490e4df45c40bebc378a3ba608313cbc9c8171581126a1c8e493adaee55802"
+    },
+    {
+      "path": "assets/currencies/atelier/PAYPAL_EUR.webp",
+      "bytes": 13416,
+      "sha256": "6b80dcd8ff85e3115dc1096a9f2bc5538e530bd4aaba8f2b3937321888e2a159"
+    },
+    {
+      "path": "assets/currencies/atelier/PAYPAL_USD.webp",
+      "bytes": 12500,
+      "sha256": "26078196e05f25d89bcd6c3f0b88220ead58d2e30d625a8fe8011d7ed46f39e0"
+    },
+    {
+      "path": "assets/currencies/atelier/REVOLUT_EUR.webp",
+      "bytes": 12304,
+      "sha256": "2699a124cfa734bed07ff262413d983dbe71785af22ec4e889ab25927147530d"
+    },
+    {
+      "path": "assets/currencies/atelier/RON.webp",
+      "bytes": 12984,
+      "sha256": "62d24790b6fc5e473c3485d422821377da738a8ecd45a2e3e0a6ff4d1b5e7ad8"
+    },
+    {
+      "path": "assets/currencies/atelier/SGD.webp",
+      "bytes": 12918,
+      "sha256": "f7141e1dae08b959b39c5a5152639d2a361653fbde3aa11fda99b54ab43b26f6"
+    },
+    {
+      "path": "assets/currencies/atelier/THB.webp",
+      "bytes": 12152,
+      "sha256": "f02ba56f5634a08c358be93da96c82c0263aef561cc38ffe47041c77d4cf8380"
+    },
+    {
+      "path": "assets/currencies/atelier/TRY.webp",
+      "bytes": 12578,
+      "sha256": "5032be45e615410e41de7deedf968ba3826f2178b6bc7b46e17b2c872d6cb366"
+    },
+    {
+      "path": "assets/currencies/atelier/USD.webp",
+      "bytes": 11950,
+      "sha256": "987ef98ba2f09a80edbc16dbf5e2b854373d6d3f9d70dcdc3832c1010cb2b1d3"
+    },
+    {
+      "path": "assets/currencies/atelier/USDC.webp",
+      "bytes": 18230,
+      "sha256": "42f348c5885daf33883d4c65e2f883ea5035e79f6c8fbd79a22bd1886ba59962"
+    },
+    {
+      "path": "assets/currencies/atelier/USDT_ERC20.webp",
+      "bytes": 16946,
+      "sha256": "797c662cdb7a3bf7e3dcc78f1246f96ad7fb646286ef4ce1395a1d0e7bf3aeba"
+    },
+    {
+      "path": "assets/currencies/atelier/USDT_SOL.webp",
+      "bytes": 16916,
+      "sha256": "5841a08b5290dd7113948abc15ad3fcb328ef1d828e8539d522a8064f90479a8"
+    },
+    {
+      "path": "assets/currencies/atelier/USDT_TON.webp",
+      "bytes": 16822,
+      "sha256": "34fbdc3d574a19229d3702434f02090d100f797d468108c505e26fcc4d606f57"
+    },
+    {
+      "path": "assets/currencies/atelier/USDT_TRC20.webp",
+      "bytes": 17260,
+      "sha256": "c8aadc2448cb269696b1d79775351fd16438a8557605b2735537b2f401688a14"
+    },
+    {
+      "path": "assets/currencies/atelier/VND.webp",
+      "bytes": 13562,
+      "sha256": "4fa172f84749708e5756352cec258719acc6ada9a99b6d984165c822ef449aee"
+    },
+    {
+      "path": "assets/currencies/atelier/WISE_EUR.webp",
+      "bytes": 12228,
+      "sha256": "914585ccf44363bfdb065f86621087825402bab50c5544f96c385581f4955ea9"
+    },
+    {
+      "path": "assets/currencies/atelier/WISE_USD.webp",
+      "bytes": 12634,
+      "sha256": "7c628af8660f19b46eb81ae51daf670d17751b9b655427a55b1722491348ec77"
+    },
+    {
+      "path": "assets/currencies/atelier/ZELLE_USD.webp",
+      "bytes": 12480,
+      "sha256": "9c0a48f0a2156f5a3019f154add54678ee8c3fae71c79fd3a6503b5f5a976053"
+    },
+    {
+      "path": "assets/desk-final.jpg",
+      "bytes": 319362,
+      "sha256": "5f536e71210a25b39c2af244bb4b1f11402495737a67c93d83a27de03f11e143"
+    },
+    {
+      "path": "assets/desk-flight-1.mp4",
+      "bytes": 4745072,
+      "sha256": "0c7867aa9530cde253dd93d52731ddf04f0567fa10828354deb8c38c14d9c814"
+    },
+    {
+      "path": "assets/desk-flight-2.mp4",
+      "bytes": 4857342,
+      "sha256": "6c0383671681397ec0e5843dd19027fdedf402815261928823deae29546651a4"
+    },
+    {
+      "path": "assets/desk-flight-3.mp4",
+      "bytes": 5117233,
+      "sha256": "92aebc3b5bcdd4b11afb8d86f00f605162f78e44222adb0dcffcadda8964e82a"
+    },
+    {
+      "path": "assets/desk-reference.jpeg",
+      "bytes": 190792,
+      "sha256": "b6f1709ef0ca4bc37114c331882829098872069c0b80e12ff3020ac3067b6a18"
+    },
+    {
+      "path": "assets/exchange-cities.json",
+      "bytes": 9938,
+      "sha256": "2dc093a19956915d4d407bdfb309a46d9cef6f6fc3955db949c98c1cc3b02d47"
+    },
+    {
+      "path": "assets/fonts/Golos-Text-OFL.txt",
+      "bytes": 4394,
+      "sha256": "ff532f9e8789f09a9fdffc3c0954eedfb0a48be77b2e2eb90f5f82e4f347f50c"
+    },
+    {
+      "path": "assets/fonts/golos-text-400.ttf",
+      "bytes": 64240,
+      "sha256": "7c255885e99e7df35f846074e6b780ee166a725e565e3a67f760dd12f4e5b77a"
+    },
+    {
+      "path": "assets/fonts/golos-text-500.ttf",
+      "bytes": 64232,
+      "sha256": "6dd89b893d2534ebb655520f2a1ac9258007af1a0daf4b8a32763f13b47fad4a"
+    },
+    {
+      "path": "assets/fonts/golos-text-600.ttf",
+      "bytes": 64308,
+      "sha256": "1d38fc3b3f03e9f22003bbf360e4cd58e8890f81e65f9a98b3773a0199ba4354"
+    },
+    {
+      "path": "assets/fonts/golos-text-700.ttf",
+      "bytes": 64160,
+      "sha256": "8b9ab44deba060e3f7a1a60bd2d8b19c4bab581e85c2e1f150a1e73a4f6aa8b4"
+    },
+    {
+      "path": "assets/intro.mp4",
+      "bytes": 6101701,
+      "sha256": "e8d49583105bb1457090b470a1d89e2f12ecf7adc93f7b6aae651e0b89ee01c5"
+    },
+    {
+      "path": "assets/logo-headscarf.png",
+      "bytes": 38998,
+      "sha256": "b59bf9ecd3b83797b3d3a4687999206a1368484989f6b08f275a3e2dff9bab24"
+    },
+    {
+      "path": "assets/loop.mp4",
+      "bytes": 8662120,
+      "sha256": "656db35b2555eca51f4309240ac5550c112d3dd314597e3dc773b0181e5dc369"
+    },
+    {
+      "path": "assets/mobile/desk-flight-1.mp4",
+      "bytes": 1718118,
+      "sha256": "a82c4bdf126f5e054c82ad9e163aa9e9b36b79eb2f05d3d9a2e4e3ef253fdc35"
+    },
+    {
+      "path": "assets/mobile/desk-flight-2.mp4",
+      "bytes": 1908706,
+      "sha256": "7d1c32fc8667ebbc7ba4d7bacd989e5efc89bc2d60f06c66bf022031a66369f0"
+    },
+    {
+      "path": "assets/mobile/desk-flight-3.mp4",
+      "bytes": 1850008,
+      "sha256": "cb3e2e83ec00c0bc2da71f0f03eeddaba4741f031f512e223d2231e4f703e78d"
+    },
+    {
+      "path": "assets/mobile/intro.mp4",
+      "bytes": 1240720,
+      "sha256": "f7f4773fd7e583fe394472fba0558f91613fc364b66ecf831405d0551c70d713"
+    },
+    {
+      "path": "assets/mobile/loop.mp4",
+      "bytes": 1822940,
+      "sha256": "50c0c03eb580f39ef622768467e8e0c74f624475e1f3e27c98889e73e6d592bf"
+    },
+    {
+      "path": "assets/mobile/scene-dark.jpg",
+      "bytes": 74917,
+      "sha256": "4ce6d49b4b6b7241c5efbfe8f6621a55584a3b00821df3086748fdfc0ec9436a"
+    },
+    {
+      "path": "assets/mobile/scene-lit.jpg",
+      "bytes": 228399,
+      "sha256": "ab099f4acb1ac3baff8e6859bb87ed54c4f9994b19ee52214c55815ff3dd1a66"
+    },
+    {
+      "path": "assets/scene-dark.png",
+      "bytes": 4097901,
+      "sha256": "94c7f4269d812af594ee5aa23b1be6a0bf65dbd0f4eda893db109cb0e047a6f5"
+    },
+    {
+      "path": "assets/scene-lit.png",
+      "bytes": 5679145,
+      "sha256": "1bc1c1ea455105b69131ea98e6a3ec550754a9cc0c0d0a954cea5a70f0662c45"
+    },
+    {
+      "path": "assets/select-chevron.svg",
+      "bytes": 209,
+      "sha256": "6d2b4013165d5aef8913709393fccdf4c6b498dc85cfa099b5bfe4fa210adbd3"
+    },
+    {
+      "path": "calculator-typography.css",
+      "bytes": 8267,
+      "sha256": "f85a7af7d818cb6691db4c27e39a0e6cd378bd312df7eab414ad783f549b8006"
+    },
+    {
+      "path": "desk.css",
+      "bytes": 28089,
+      "sha256": "752192b69d3b24fafd63ec46e2365043c745144b54358603d9ff9da97042afcb"
+    },
+    {
+      "path": "desk.js",
+      "bytes": 23992,
+      "sha256": "ae6b5305344696ec5b8bc0961576d0be3bc3efa75fa4e6d7305b1d53465ef810"
+    },
+    {
+      "path": "exchange-catalog.js",
+      "bytes": 7941,
+      "sha256": "296ae30dd0e9e9597f1dedfefde026a0bb4f2b132650504c160d9ea88cbbe818"
+    },
+    {
+      "path": "exchange-core.js",
+      "bytes": 1712,
+      "sha256": "1fd3cfca24037456241a630ba1a77257d5e2f6ccba5382d577b57ccb5eb74a4f"
+    },
+    {
+      "path": "flight.js",
+      "bytes": 5074,
+      "sha256": "2461d4949308e4d32a7d22414fc926ed9d21564cce96936dd6ede5ddfafc4f01"
+    },
+    {
+      "path": "index.html",
+      "bytes": 18282,
+      "sha256": "bd27f85d5d98eb591f0c3e45e2a32bf555be7e7ce61e8782eb5e8d96db8792d4"
+    },
+    {
+      "path": "main.js",
+      "bytes": 13075,
+      "sha256": "725923f8fab2b51aca14261494aa46dcc0d1702d8a7adc8ec42cace9fc0bc5ca"
+    },
+    {
+      "path": "mobile-framing.css",
+      "bytes": 796,
+      "sha256": "d0b274b6a7660f599669cc5e767d3b0b08b1389c98e909e6461813a1c4dadeb4"
+    },
+    {
+      "path": "mobile-framing.js",
+      "bytes": 768,
+      "sha256": "3d0616ed948cf8a6e4136dc9fcd6ada42486e6e8e1fe173407e965f06989bf83"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 9575,
+      "sha256": "43f07fe02cdfb7599da9ef7d752b46efd066e9a5dba13a22888b9286eddc4eab"
+    }
+  ]
+}

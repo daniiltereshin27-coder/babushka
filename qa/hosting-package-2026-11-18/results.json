@@ -1,0 +1,35 @@
+{
+  "filesVerifiedOverHTTP": 85,
+  "checks": [
+    {
+      "width": 1440,
+      "errors": [],
+      "missing": [],
+      "calculator": true,
+      "citySearch": true,
+      "demoForm": true,
+      "directHash": true
+    },
+    {
+      "width": 390,
+      "errors": [],
+      "missing": [],
+      "calculator": true,
+      "citySearch": true,
+      "demoForm": true,
+      "directHash": true
+    },
+    {
+      "width": 1440,
+      "normalMotion": true,
+      "introAndLoop": true,
+      "exchangeTransition": true
+    },
+    {
+      "width": 390,
+      "normalMotion": true,
+      "introAndLoop": true,
+      "exchangeTransition": true
+    }
+  ]
+}

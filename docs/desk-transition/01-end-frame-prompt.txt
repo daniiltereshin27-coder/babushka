@@ -1,0 +1,21 @@
+PURPOSE
+Prepare the final overhead scene image before generating the camera transition.
+This prompt requires a checked overhead geometry reference. That reference has not yet been created.
+
+INPUT ORDER
+Image 1: an actual exit frame extracted from the currently accepted original loop.mp4. This is the appearance, character, lighting and prop identity master.
+Image 2: the clean, visually checked overhead geometry render of this same scene. This controls camera, object footprints, orientation, spacing and occlusion. Proxy colors are identifiers, not final materials. No grids, labels, camera icons or interface elements in this render.
+
+PROMPT
+Reconstruct the appearance of the exact room and desk from Image 1 through the overhead camera shown in Image 2. This is the same physical scene, not a redesigned room. Image 1 is authoritative for identity and materials; Image 2 is authoritative for the verified spatial layout and camera. Translate each geometry proxy into its corresponding real object from Image 1 without changing its footprint or orientation.
+
+Lock the camera to Image 2: a true vertical overhead view of the wooden desktop, zero camera roll, with the grandmother's side at the top of the image. Do not reverse the viewpoint or place the grandmother at the bottom. Preserve the table's shape, aged wood grain and edges. Keep the source arrangement of the blue knitted globe with two knitting needles, wooden abacus, amber tea in its metal glass holder with its spoon, black rotary telephone and lit brass desk lamp. Their projected shapes and overlaps must follow Image 2. Do not redistribute props around a decorative central rectangle.
+
+There is exactly one elderly woman, seated in the original leather chair, wearing the same polka-dot headscarf, brown knitted cardigan and floral dress. Preserve her identity and the body pose from Image 1 wherever visible. The one long-haired tabby cat stays on her lap, behind the far table edge. Natural cropping or occlusion is allowed; do not move the cat onto the desktop or add hands on the desk merely to fill the composition. Do not invent notebooks, stamps or coins from another reference.
+
+Retain the original warm daylight coming through the blinds behind the grandmother and the secondary amber light from the existing desk lamp. Transform these world-space light sources into the new camera view naturally. Preserve warm wood, worn brass, dark leather and blue yarn, realistic contact shadows and consistent exposure. New surfaces revealed by the overhead view must be a conservative continuation of the same objects.
+
+Render the central and left desktop as continuous bare wood, with the intended clear area from Image 2 unobstructed. No leather mat, calculator, text, numbers, symbols, logos or graphical interface in the image. The interface will be composited separately. Keep the tabletop sharp and geometrically stable. Produce a photorealistic, clean final camera plate at the agreed matching aspect ratio.
+
+AVOID
+Mirroring, a reverse angle, moving props to improve composition, a cat on the table, altered facial identity, extra limbs, changed clothing, duplicate objects, invented stationery, fisheye distortion, artificial glow, changed time of day, or unreadable fake typography.

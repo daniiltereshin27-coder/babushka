@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e0b08">
+  <meta name="description" content="Babushka Exchange — обмен криптовалюты в любой точке мира.">
+  <title>Babushka Exchange — Бабушка обменяет</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo-headscarf.png">
+  <link rel="preload" as="image" href="assets/scene-dark.png" media="(min-width: 901px)" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/mobile/scene-dark.jpg" media="(max-width: 900px)" fetchpriority="high">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site-header.css">
+  <link rel="stylesheet" href="styles.css?v=20261118-r2">
+  <script>
+    document.documentElement.classList.add('js');
+    window.bxBootGuard = setTimeout(function () {
+      if (!window.bxReady) document.documentElement.classList.remove('js');
+    }, 6500);
+  </script>
+  <link rel="stylesheet" href="desk.css?v=sticky-header-20261118">
+  <link rel="stylesheet" href="calculator-typography.css?v=compact-currencies">
+  <script src="assets/site-header.js" defer></script>
+  <script src="main.js?v=safari-20261118" defer></script>
+  <script src="flight.js?v=desktop-only-20261118" defer></script>
+  <script src="exchange-catalog.js?v=server1" defer></script>
+  <script src="exchange-core.js?v=2" defer></script>
+  <script src="desk.js?v=tiers1" defer></script>
+  <link rel="stylesheet" href="mobile-framing.css?v=20261118-r2" media="(max-width: 900px) and (orientation: portrait)">
+  <script defer src="mobile-framing.js"></script>
+</head>
+<body>
+  <audio id="background-music" src="assets/background-music.mp3" autoplay loop controls preload="metadata" aria-label="Фоновая музыка"></audio>
+  <button class="sound-toggle" type="button" aria-label="Выключить музыку" aria-pressed="true" hidden>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4 6 8H3v8h3l5 4Z"/><path class="sound-waves" d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/><path class="sound-off" d="m16 9 6 6m0-6-6 6"/></svg>
+  </button>
+  <a class="skip-link" href="#exchange">Перейти к обмену</a>
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title" data-state="loading">
+      <div class="hero__scene" aria-hidden="true">
+        <picture>
+          <source media="(max-width: 900px)" srcset="assets/mobile/scene-dark.jpg">
+          <img class="hero__media poster poster--dark" src="assets/scene-dark.png" width="2688" height="1520" alt="" fetchpriority="high">
+        </picture>
+        <picture>
+          <source media="(max-width: 900px)" srcset="assets/mobile/scene-lit.jpg">
+          <img class="hero__media poster poster--lit" src="assets/scene-lit.png" width="2688" height="1520" alt="" decoding="async">
+        </picture>
+        <video class="hero__media" id="intro" muted playsinline preload="auto" disablepictureinpicture></video>
+        <video class="hero__media" id="loop" muted playsinline loop preload="metadata" disablepictureinpicture></video>
+        <video class="hero__media" id="loop-next" muted playsinline loop preload="metadata" disablepictureinpicture></video>
+      </div>
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="hero__ui">
+        <header class="header reveal-item">
+          <a class="brand" href="#home" aria-label="Babushka Exchange — главная">
+            <img src="assets/logo-headscarf.png" alt="" width="48" height="52">
+            <span>Babushka<br>Exchange</span>
+          </a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" aria-label="Открыть меню">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path class="menu-bars" d="M3 8.25h18M3 15.75h18"/><path class="menu-close" d="m5 5 14 14M19 5 5 19"/></svg>
+          </button>
+          <nav class="navigation" id="navigation" aria-label="Основная навигация">
+            <a href="#exchange">Обмен</a>
+            <a href="/about/">О нас</a>
+            <a href="#partners">Партнёры</a>
+            <a href="#rules">Правила</a>
+            <a href="#contacts">Контакты</a>
+            <a class="header-telegram" href="https://t.me/baulsk" target="_blank" rel="noopener noreferrer" aria-label="Написать в Telegram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 3-6 18-4-8-8-4 18-6Zm0 0L11 13"/></svg></a>
+            <a class="button button--outline" href="#exchange">Оставить заявку</a>
+          </nav>
+        </header>
+        <div class="hero__copy">
+          <h1 class="reveal-item" id="hero-title">Бабушка обменяет в любой точке мира</h1>
+          <p class="hero__subtitle reveal-item">USDT, BTC, ETH — наличные, карта<br class="desktop-break"> или банк в 60+ странах</p>
+        </div>
+        <div class="hero__action reveal-item">
+          <button class="video-retry" type="button" hidden>Включить видео</button>
+          <a class="button button--primary" href="#exchange" id="exchange-button"><span>Обменять</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="exchange desk desk--generated" id="exchange" aria-labelledby="exchange-title" tabindex="-1" aria-hidden="true">
+      <div class="desk__background" aria-hidden="true"></div>
+      <div class="desk__header-slot"></div>
+      <div class="desk__board">
+        <div class="desk__heading"><span class="desk__eyebrow">Всё по-домашнему. Всё по делу.</span><h2 id="exchange-title">Давайте посчитаем</h2></div>
+        <form id="exchange-form" novalidate>
+          <div class="desk__columns">
+            <div class="desk__column"><h3>Отдаёте</h3><label class="desk__filter-label" for="send-type">Тип валюты</label><select class="desk__type" id="send-type"><option value="all">Все валюты</option><option value="crypto">Криптовалюта</option><option value="cash">Наличные</option><option value="cashless">Безналичные</option></select><div class="desk__currencies" id="send-choices" role="group" aria-label="Отдаёте: выбор валюты"></div><label class="desk__amount-label" for="send-amount">Сумма</label><div class="desk__field"><input id="send-amount" name="amount" inputmode="decimal" value="1000" autocomplete="off" aria-describedby="amount-error" required><select id="send-currency" aria-label="Валюта, которую отдаёте"></select><button type="button" class="currency-trigger" id="send-picker" aria-haspopup="dialog" aria-controls="currency-picker"><img alt="" width="32" height="32"><span></span></button></div><span class="desk__network" id="send-network"></span>
+<div class="desk__quote" id="quote-note">
+            <div class="desk__timer" role="timer" aria-label="Обновление расчёта через 60 секунд"><svg viewBox="0 0 48 48" aria-hidden="true"><circle class="timer-track" cx="24" cy="24" r="21"/><circle class="timer-progress" cx="24" cy="24" r="21"/></svg><span id="rate-countdown" aria-hidden="true">60</span></div>
+            <div class="desk__rate-copy"><span>Предварительный курс</span><strong id="exchange-rate"></strong><small id="rate-status" aria-live="polite">Обновление каждые 60 секунд</small></div>
+            <button class="desk__text-link" type="button" data-request="custom">Нужно больше направлений?</button>
+          </div>
+<div class="desk__delivery" id="send-location" hidden><label>Локация передачи<input type="hidden" id="send-city" value="Дубай, Объединённые Арабские Эмираты (ОАЭ)"><button class="desk__city-button" type="button" data-city-open="send" aria-haspopup="dialog"><span id="send-city-label">Дубай, ОАЭ</span></button></label><div class="desk__location-links"><button type="button" data-city-target="send" data-city="Абу-Даби">Абу-Даби</button><button type="button" data-city-target="send" data-city="Дубай">Дубай</button><button type="button" data-city-target="send">Все локации</button></div></div></div>
+            <button class="desk__swap" type="button" aria-label="Поменять валюты местами">⇄</button>
+            <div class="desk__column"><h3>Получаете</h3><label class="desk__filter-label" for="receive-type">Тип валюты</label><select class="desk__type" id="receive-type"><option value="all">Все валюты</option><option value="crypto">Криптовалюта</option><option value="cash">Наличные</option><option value="cashless">Безналичные</option></select><div class="desk__currencies" id="receive-choices" role="group" aria-label="Получаете: выбор валюты"></div><label class="desk__amount-label" for="receive-amount">Сумма</label><div class="desk__field"><input id="receive-amount" inputmode="decimal" autocomplete="off" aria-describedby="amount-error"><select id="receive-currency" aria-label="Валюта, которую получаете"></select><button type="button" class="currency-trigger" id="receive-picker" aria-haspopup="dialog" aria-controls="currency-picker"><img alt="" width="32" height="32"><span></span></button></div><span class="desk__network" id="receive-network"></span><div class="desk__delivery" id="delivery-fields"><label hidden>Как получить<select id="receive-method"><option value="cash">Наличными</option><option value="bank">На банковский счёт</option></select></label><label id="city-field">Локация получения<input type="hidden" id="receive-city" value="Дубай, Объединённые Арабские Эмираты (ОАЭ)"><button class="desk__city-button" type="button" data-city-open="receive" aria-haspopup="dialog"><span id="receive-city-label">Дубай, ОАЭ</span></button></label><div class="desk__location-links"><button type="button" data-city-target="receive" data-city="Абу-Даби">Абу-Даби</button><button type="button" data-city-target="receive" data-city="Дубай">Дубай</button><button type="button" data-city-target="receive">Все локации</button></div></div></div>
+          </div>
+          <p class="desk__error" id="amount-error" aria-live="polite"></p>
+
+          <button class="desk__submit" type="submit">Обменять</button>
+          <aside class="desk__help"><div><strong>Не нашли своё направление?</strong><p>Оставьте заявку — менеджер свяжется для уточнения деталей и поможет подобрать вариант обмена.</p></div><button type="button" class="desk__secondary" data-request="custom">Оставить заявку</button></aside>
+          <div class="desk__support"><span>Есть вопрос по обмену?</span><button class="desk__text-link" type="button" data-request="feedback">Связаться с нами</button></div>
+        </form>
+      </div>
+      <dialog class="bx-modal currency-picker" id="currency-picker" aria-labelledby="currency-picker-title">
+        <button type="button" class="bx-modal__close" aria-label="Закрыть выбор валюты">×</button>
+        <h2 id="currency-picker-title">Выберите валюту</h2>
+        <label for="picker-type">Тип валюты</label>
+        <select id="picker-type"></select>
+        <div class="currency-options"></div>
+      </dialog>
+      <dialog class="bx-modal bx-request" id="quote-dialog" aria-labelledby="quote-title">
+        <button type="button" class="bx-modal__close" data-close-dialog aria-label="Закрыть заявку">×</button>
+        <div id="request-content">
+          <div class="bx-request__heading"><h2 id="quote-title">Новая заявка</h2><p id="request-intro">Оставьте контакты — дальше всё обсудим лично.</p></div>
+          <div class="bx-request__layout">
+            <aside class="bx-summary" id="request-summary"><span class="bx-kicker">Ваш обмен</span><div class="bx-summary__item"><span>Отдаёте</span><div><img id="summary-from-icon" alt="" width="64" height="64"><strong id="summary-from"></strong></div></div><div class="bx-summary__item"><span>Получаете</span><div><img id="summary-to-icon" alt="" width="64" height="64"><strong id="summary-to"></strong></div></div><dl><div id="summary-city-row"><dt>Локация</dt><dd id="summary-city"></dd></div><div><dt>Предварительный курс</dt><dd id="summary-rate"></dd></div></dl><button type="button" class="desk__text-link" data-close-dialog>Изменить расчёт</button><p>Курс фиксируется при совершении сделки. Возможность выдачи наличных и стоимость доставки уточнит менеджер.</p></aside>
+            <form id="request-form" novalidate>
+              <div class="bx-form-row"><label for="request-name">Ваше имя <span>*</span></label><input id="request-name" name="name" autocomplete="given-name" placeholder="Как к вам обращаться" maxlength="80" required aria-describedby="request-name-error"><small class="bx-field-error" id="request-name-error"></small></div>
+              <div class="bx-form-row"><label for="request-telegram">Telegram <span>*</span></label><input id="request-telegram" name="telegram" autocomplete="off" spellcheck="false" autocapitalize="off" placeholder="@username" maxlength="40" required aria-describedby="telegram-hint request-telegram-error"><small id="telegram-hint">Проверьте имя пользователя — менеджер напишет вам сюда.</small><small class="bx-field-error" id="request-telegram-error"></small></div>
+              <div class="bx-form-row" id="request-message-row" hidden><label for="request-message" id="request-message-label">Какой обмен вас интересует? <span>*</span></label><textarea id="request-message" name="message" rows="3" maxlength="1000" placeholder="Что отдаёте и получаете, сумма, город" aria-describedby="request-message-error"></textarea><small class="bx-field-error" id="request-message-error"></small></div>
+              <fieldset class="bx-consents"><legend class="sr-only">Согласия</legend><label><input type="checkbox" id="consent-rules" required><span>Я согласен с <button type="button" data-document="rules">правилами обмена</button></span></label><label><input type="checkbox" id="consent-privacy" required><span>Я согласен с <button type="button" data-document="privacy">политикой конфиденциальности</button></span></label><label><input type="checkbox" id="consent-aml" required><span>Я ознакомлен с <button type="button" data-document="aml">условиями AML/KYC</button></span></label><small class="bx-field-error" id="consent-error" aria-live="polite"></small></fieldset>
+              <div class="bx-form-note"><strong>Заявки принимаются круглосуточно</strong><p>Первый освободившийся менеджер свяжется с вами в Telegram. Реквизиты и условия сделки обсуждаются в личном чате.</p></div>
+              <p id="request-quote-error" class="bx-field-error" role="alert" hidden></p>
+              <button class="desk__submit bx-request__submit" type="submit">Отправить заявку</button>
+            </form>
+          </div>
+        </div>
+        <div class="bx-success" id="request-success" hidden tabindex="-1"><span class="bx-success__mark" aria-hidden="true">✓</span><span class="bx-kicker">Всё по-домашнему. Всё по делу.</span><h2>Всё готово</h2><p id="success-caption">Ваш расчёт и контактные данные проверены.</p><div class="bx-success__number"><span id="request-number-label">Номер расчёта</span><strong id="request-number"></strong></div><p class="bx-success__notice">В этом просмотре заявка не отправляется менеджеру.</p><button type="button" class="desk__submit" data-close-dialog>Вернуться к калькулятору</button></div>
+        <section class="bx-document" id="request-document" hidden tabindex="-1"><button class="desk__text-link" type="button" id="document-back">← К заявке</button><h2 id="document-title"></h2><div id="document-body"></div></section>
+      </dialog>
+      <dialog class="bx-modal bx-locations" id="city-dialog" aria-labelledby="city-dialog-title"><button type="button" class="bx-modal__close" data-close-dialog aria-label="Закрыть выбор локации">×</button><h2 id="city-dialog-title">Выберите локацию</h2><p>Введите город и страну в любом порядке.</p><label class="sr-only" for="city-search">Поиск по городу или стране</label><input id="city-search" type="search" placeholder="Город или страна" autocomplete="off"><div class="bx-city-count" id="city-count" aria-live="polite"></div><div class="bx-city-list" id="city-results"></div><div id="city-empty" hidden><p>Такой локации пока нет в списке.</p><button type="button" class="desk__secondary" id="city-custom-request">Уточнить у менеджера</button></div></dialog>
+    </section>
+  </main>
+</body>
+</html>

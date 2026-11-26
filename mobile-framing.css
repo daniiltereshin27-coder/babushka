@@ -1,0 +1,31 @@
+/* The mobile source is landscape. A shorter, full-width box reveals its sides. */
+:root {
+  --scene-height: 81svh;
+  --scene-top: max(calc(max(580px, 100svh) - var(--scene-height)), calc(var(--hero-copy-bottom, 310px) + 4px - var(--scene-height) * .09));
+}
+.hero__copy {
+  top: max(88px, calc(14% - 12px));
+}
+@media (max-width: 450px) {
+  .hero__copy { top: max(100px, calc(14% - 12px)); }
+}
+.hero__scene {
+  height: var(--scene-height);
+  top: var(--scene-top);
+  bottom: auto;
+  transform: none;
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 9%);
+  mask-image: linear-gradient(to bottom, transparent, black 9%);
+}
+.desk-flight video {
+  height: var(--scene-height);
+  transform: translateY(var(--scene-top));
+  transition: height .9s ease, transform .9s ease;
+}
+.desk-flight.is-moving video {
+  height: 100%;
+  transform: translateY(0);
+}
+@media (max-height: 740px) {
+  :root { --scene-height: 72svh; }
+}

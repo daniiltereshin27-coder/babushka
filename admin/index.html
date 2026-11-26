@@ -1,0 +1,118 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Направления обмена · Babushka</title><link rel="stylesheet" href="/admin/admin.css"><script defer src="/exchange-catalog.js"></script><script defer src="/exchange-core.js"></script><script defer src="/admin/access.js"></script><script defer src="/admin/admin.js"></script><script defer src="/admin/catalog.js"></script></head><body><div class="admin-shell">
+<aside class="sidebar">
+  <div class="brand"><img src="/assets/logo-headscarf.png" alt=""><strong>Babushka Exchange</strong></div>
+  <nav aria-label="Разделы админки">
+    <a href="#directions" aria-current="page">Направления обмена</a>
+    <a href="#catalog">Валюты и способы оплаты</a>
+    <a href="#locations">Доступность локаций</a>
+    <a href="#audit">Журнал действий</a>
+  </nav>
+  <a class="calculator-link" href="/#exchange" target="_blank" rel="noopener">Открыть калькулятор ↗</a>
+<div class="account"><span id="account-name"></span><button type="button" id="logout">Выйти</button><small id="account-status" role="status"></small></div>
+</aside>
+<main><div hidden id="audit-panel"><h1>Журнал действий</h1><section><div class="top"><h2>Последние события</h2><button type="button" id="audit-refresh">Обновить</button></div><ol id="audit-list"></ol></section></div><div id="directions-panel"><h1>Направления обмена</h1>
+<div class="layout"><section><div class="top"><h2>Правила</h2><button id="new" type="button">Добавить</button></div><div class="rule-tools">
+<label for="rule-search">Поиск правил</label>
+<input type="search" id="rule-search" placeholder="Валюта, сеть или город" autocomplete="off">
+<div class="segments rule-status" role="group" aria-label="Статус правила">
+  <button type="button" data-status="all" aria-pressed="true">Все</button>
+  <button type="button" data-status="active" aria-pressed="false">Доступны</button>
+  <button type="button" data-status="paused" aria-pressed="false">Недоступны</button>
+</div>
+<details id="rule-filters"><summary>Фильтр по направлению</summary><div class="rule-sides"><div class="pick-field"><label id="filter-src-label" for="filter-src">Отдаёте</label>
+  <button id="filter-src" type="button" class="pick-trigger" aria-haspopup="dialog" aria-controls="pick-dialog" aria-labelledby="filter-src-label filter-src-value"><span id="filter-src-value">Любая валюта</span></button></div><div class="pick-field"><label id="filter-dst-label" for="filter-dst">Получаете</label>
+  <button id="filter-dst" type="button" class="pick-trigger" aria-haspopup="dialog" aria-controls="pick-dialog" aria-labelledby="filter-dst-label filter-dst-value"><span id="filter-dst-value">Любая валюта</span></button></div></div></details>
+<div class="list-info"><span id="rule-count" role="status"></span><button type="button" id="reset-rules" hidden>Сбросить</button></div></div>
+<div id="list"></div><p id="empty-rules" hidden>Правил не найдено.</p>
+<nav id="rule-pages" aria-label="Страницы правил" hidden><button type="button" id="prev-rules" aria-label="Предыдущая страница">‹</button><span id="rule-page"></span><button type="button" id="next-rules" aria-label="Следующая страница">›</button></nav>
+</section>
+<section><h2 id="title" tabindex="-1">Настройка направления</h2><form id="editor"><p class="hint" id="effective-status" role="status"></p><div class="pair"><div class="pick-field" ><label id="src-label" for="src">Отдаёте</label><button class="pick-trigger" id="src" type="button" aria-haspopup="dialog" aria-controls="pick-dialog" aria-labelledby="src-label src-value"><span id="src-value"></span></button></div><div class="pick-field" ><label id="dst-label" for="dst">Получаете</label><button class="pick-trigger" id="dst" type="button" aria-haspopup="dialog" aria-controls="pick-dialog" aria-labelledby="dst-label dst-value"><span id="dst-value"></span></button></div></div><div class="pick-field" id="place"><label id="city-label" for="city">Город</label><button class="pick-trigger" id="city" type="button" aria-haspopup="dialog" aria-controls="pick-dialog" aria-labelledby="city-label city-value"><span id="city-value"></span></button></div>
+<div class="pair"><label>Минимум<input id="min" type="number" required step="any" min="0.00000001"></label><label>Максимум<input id="max" type="number" required step="any" min="0.00000001"></label></div><small id="unit"></small>
+<label>Поправка к курсу, %<input id="percent" type="number" required step="any"></label>
+<fieldset class="bands"><legend>Диапазоны сумм</legend>
+<small>Каждая следующая поправка действует от указанной суммы отдачи включительно.</small>
+<div id="tiers"></div><button type="button" id="add-tier">Добавить диапазон</button></fieldset>
+<label class="check"><input id="enabled" type="checkbox"> Разрешить это направление</label>
+<div class="actions"><button class="primary">Сохранить</button><a id="preview" target="_blank" rel="noopener" hidden>Проверить в калькуляторе ↗</a><button type="button" id="reverse-rule" hidden>Обратное направление</button></div><p id="status" role="status"></p></form></section></div>
+</div>
+<div id="catalog-panel" hidden><h1>Валюты и способы оплаты</h1>
+<div class="layout"><section>
+  <div class="top"><h2>Каталог</h2><button type="button" id="catalog-add">Добавить</button></div>
+  <label for="catalog-search">Поиск по каталогу</label>
+  <input type="search" id="catalog-search" placeholder="Название, тикер или сеть">
+  <div id="catalog-tabs" class="segments" role="group" aria-label="Категория каталога">
+    <button type="button" data-kind="all">Все</button><button type="button" data-kind="crypto">Криптовалюты</button>
+    <button type="button" data-kind="cash">Наличные</button><button type="button" data-kind="cashless">Безналичные</button>
+  </div>
+  <p class="hint" id="catalog-count" role="status"></p>
+  <div id="catalog-list"></div>
+</section><section>
+<h2 id="instrument-title" tabindex="-1">Новая позиция</h2>
+<form id="instrument-form">
+  <label>Категория<select id="instrument-category"><option value="crypto">Криптовалюта</option><option value="cash">Наличные</option><option value="cashless">Безналичные</option></select></label>
+  <label>Название в калькуляторе<input id="instrument-label" maxlength="80" required placeholder="Например, USDT · Polygon"></label>
+  <div class="pair">
+    <label>Тикер<input id="instrument-symbol" maxlength="15" required placeholder="USDT" autocapitalize="characters" spellcheck="false"></label>
+    <label><span id="network-label">Сеть</span><input id="instrument-network" maxlength="120"></label>
+  </div>
+  <fieldset class="bands"><legend>Стороны обмена</legend>
+    <label class="check"><input id="instrument-send" type="checkbox"> Отдаёте</label>
+    <label class="check"><input id="instrument-receive" type="checkbox"> Получаете</label>
+    <small>Стороны указаны для клиента. Снимите обе галочки, чтобы скрыть позицию. Для расчёта потребуется правило обмена.</small>
+  </fieldset>
+  <label for="instrument-file">Иконка</label><div class="icon-row">
+    <div class="icon-preview"><img id="instrument-preview" alt="Предпросмотр иконки" hidden><span id="instrument-monogram"></span></div>
+    <div><input type="file" id="instrument-file" accept="image/png,image/jpeg,image/webp">
+      <small>PNG, JPG или WebP. Изображение впишется в квадрат.</small></div>
+  </div>
+  <div class="pair"><label>Тестовый курс, USD за 1 единицу<input id="instrument-usd" type="number" step="any" required></label>
+    <label>Знаков после запятой<input id="instrument-digits" type="number" min="0" max="8" step="1" required></label></div>
+  <div class="actions"><button id="instrument-save" class="primary">Сохранить</button>
+    <button id="instrument-rule" type="button" hidden>Создать правило</button></div>
+  <p id="instrument-status" role="status"></p>
+</form></section></div></div>
+<div id="locations-panel" hidden><h1>Доступность локаций</h1>
+<section class="geo" aria-label="Настройки по стране">
+  <div class="country-bar">
+    <div class="pick-field"><label id="location-label" for="location">Страна</label>
+      <button class="pick-trigger" id="location" type="button" aria-haspopup="dialog" aria-controls="pick-dialog" aria-labelledby="location-label location-value"><span id="location-value">Выберите страну</span></button>
+    </div>
+    <button type="button" id="add-country">Добавить страну</button>
+    <button id="toggle-pause" type="button" hidden></button>
+  </div>
+  <div id="country-cities" hidden>
+    <p id="country-notice" hidden>Страна на паузе. Настройки городов снова вступят в силу после её снятия.</p>
+    <div class="city-heading"><h2>Города</h2><span id="city-total"></span><button type="button" id="add-city">Добавить город</button></div>
+    <p class="hint">При приёме клиент отдаёт наличные, при выдаче — получает. Галочки сохраняются сразу. Для обмена требуется правило.</p>
+    <label for="city-search">Поиск города</label><input type="search" id="city-search" placeholder="Название города" autocomplete="off">
+    <table class="city-table"><thead><tr><th scope="col">Город</th><th scope="col">Приём</th><th scope="col">Выдача</th><th scope="col">Правило</th></tr></thead><tbody id="city-rows"></tbody></table>
+    <p id="city-empty" hidden>Город не найден.</p>
+  </div>
+  <p id="pause-status" role="status"></p>
+</section></div></main></div>
+<dialog id="geo-dialog" aria-labelledby="geo-title">
+  <form id="geo-form">
+    <header><h2 id="geo-title"></h2><button type="button" id="geo-close" aria-label="Закрыть">×</button></header>
+    <label id="geo-country-field">Название страны<input id="geo-country" maxlength="100" autocomplete="off"></label>
+    <p id="geo-parent" class="hint" hidden></p>
+    <label><span id="geo-city-label">Название города</span><input id="geo-city" maxlength="100" autocomplete="off"></label>
+    <fieldset id="geo-operations" class="bands"><legend>Операции в городе</legend>
+      <label class="check"><input type="checkbox" id="geo-intake" checked> Приём наличных</label>
+      <label class="check"><input type="checkbox" id="geo-payout" checked> Выдача наличных</label>
+    </fieldset>
+    <p id="geo-error" role="alert"></p>
+    <div class="actions"><button type="submit" class="primary" id="geo-save">Сохранить</button><button type="button" id="geo-cancel">Отмена</button></div>
+  </form>
+</dialog>
+<dialog id="pick-dialog" aria-labelledby="pick-title">
+  <header><h2 id="pick-title"></h2><button type="button" id="pick-close" aria-label="Закрыть">×</button></header>
+  <div id="pick-categories" class="segments" role="group" aria-label="Тип валюты">
+    <button type="button" data-category="all">Все</button>
+    <button type="button" data-category="crypto">Криптовалюты</button>
+    <button type="button" data-category="cash">Наличные</button>
+    <button type="button" data-category="cashless">Безналичные</button>
+  </div>
+  <input id="pick-search" type="search" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-controls="pick-options" autocomplete="off" spellcheck="false">
+  <div id="pick-count" role="status"></div>
+  <div id="pick-options" role="listbox" aria-labelledby="pick-title"></div>
+</dialog></body></html>

@@ -1,0 +1,23 @@
+{
+  "tool": "Built-in image_gen",
+  "date": "2026-11-17",
+  "reference": "telegram-v1.png",
+  "prompts": [
+    {
+      "name": "sound-on",
+      "prompt": "Use case: style-transfer. Adapt the provided Telegram medallion into ONE matching functional UI icon for Babushka Exchange. Preserve precisely the original deep forest-green textured enamel, aged warm brass rim, four delicate brass botanical ornaments, slightly tilted circular shape, framing, proportions, thickness and lighting. Replace ONLY the central paper-plane emblem with the symbol described below. Central symbol must be raised warm ivory / pale champagne-gold, thick beveled edges, broad simple clean geometry legible at 44px, matching the original emblem's material and relief. Same square composition and generous margins as reference, whole medallion visible. True transparent alpha background. No text, no blue, no additional objects, no plane, no drawn checkerboard. A speaker symbol pointing right with TWO clear curved sound waves to its right. Conventional audio volume-on icon, large and centered."
+    },
+    {
+      "name": "sound-off",
+      "prompt": "Use case: style-transfer. Adapt the provided Telegram medallion into ONE matching functional UI icon for Babushka Exchange. Preserve precisely the original deep forest-green textured enamel, aged warm brass rim, four delicate brass botanical ornaments, slightly tilted circular shape, framing, proportions, thickness and lighting. Replace ONLY the central paper-plane emblem with the symbol described below. Central symbol must be raised warm ivory / pale champagne-gold, thick beveled edges, broad simple clean geometry legible at 44px, matching the original emblem's material and relief. Same square composition and generous margins as reference, whole medallion visible. True transparent alpha background. No text, no blue, no additional objects, no plane, no drawn checkerboard. A speaker symbol pointing right with a clear bold X immediately to its right, indicating muted audio. No sound waves. Large and centered."
+    },
+    {
+      "name": "menu",
+      "prompt": "Use case: style-transfer. Adapt the provided Telegram medallion into ONE matching functional UI icon for Babushka Exchange. Preserve precisely the original deep forest-green textured enamel, aged warm brass rim, four delicate brass botanical ornaments, slightly tilted circular shape, framing, proportions, thickness and lighting. Replace ONLY the central paper-plane emblem with the symbol described below. Central symbol must be raised warm ivory / pale champagne-gold, thick beveled edges, broad simple clean geometry legible at 44px, matching the original emblem's material and relief. Same square composition and generous margins as reference, whole medallion visible. True transparent alpha background. No text, no blue, no additional objects, no plane, no drawn checkerboard. A hamburger menu symbol: THREE evenly spaced horizontal parallel bars of equal length, softly rounded ends, each a thick dimensional ivory-gold bar. Large centered clear symbol."
+    },
+    {
+      "name": "menu-close",
+      "prompt": "Use case: style-transfer. Adapt the provided Telegram medallion into ONE matching functional UI icon for Babushka Exchange. Preserve precisely the original deep forest-green textured enamel, aged warm brass rim, four delicate brass botanical ornaments, slightly tilted circular shape, framing, proportions, thickness and lighting. Replace ONLY the central paper-plane emblem with the symbol described below. Central symbol must be raised warm ivory / pale champagne-gold, thick beveled edges, broad simple clean geometry legible at 44px, matching the original emblem's material and relief. Same square composition and generous margins as reference, whole medallion visible. True transparent alpha background. No text, no blue, no additional objects, no plane, no drawn checkerboard. A simple bold symmetrical X close symbol, two diagonal ivory-gold beveled bars crossing at center. Large and centered."
+    }
+  ]
+}

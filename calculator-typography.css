@@ -1,0 +1,122 @@
+/* Calculator type system. The shared header and hero retain their brand fonts. */
+@font-face{font-family:'Golos Text';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/golos-text-400.ttf') format('truetype')}
+@font-face{font-family:'Golos Text';font-style:normal;font-weight:500;font-display:swap;src:url('assets/fonts/golos-text-500.ttf') format('truetype')}
+@font-face{font-family:'Golos Text';font-style:normal;font-weight:600;font-display:swap;src:url('assets/fonts/golos-text-600.ttf') format('truetype')}
+@font-face{font-family:'Golos Text';font-style:normal;font-weight:700;font-display:swap;src:url('assets/fonts/golos-text-700.ttf') format('truetype')}
+
+.desk__board,.desk .bx-modal{
+  --font-body:'Golos Text',Arial,sans-serif;
+  --font-display:'Golos Text',Arial,sans-serif;
+  font-family:var(--font-body);
+  font-weight:400;
+  letter-spacing:0;
+  font-kerning:normal;
+}
+/* Preserve the approved currency labels and dropdown typography. */
+.desk .desk__currency,.desk select{font-family:'Manrope',Arial,sans-serif}
+.desk .desk__heading h2{font:500 clamp(28px,2.5vw,36px)/1.2 var(--font-display);letter-spacing:-.035em;margin:10px 0}
+.desk .desk__column h3{font:500 clamp(28px,2.5vw,34px)/1.2 var(--font-display);letter-spacing:-.03em}
+.desk__heading .desk__eyebrow{font-size:13px;font-weight:400;letter-spacing:.02em}
+.desk .desk__filter-label,.desk .desk__amount-label,.desk .desk__delivery label{font-size:14px;font-weight:500;line-height:1.5}
+.desk .desk__field input{font-family:var(--font-body);font-weight:500;letter-spacing:-.025em;font-variant-numeric:tabular-nums}
+.desk .desk__field input:focus-visible,.desk .desk__field select:focus-visible{outline:none}
+.desk .desk__field:focus-within{border-color:#d8bb83;box-shadow:0 0 0 1px #d8bb8333}
+.desk .desk__network{font-size:13px;font-weight:400;line-height:1.55}
+.desk .desk__city-button{font:500 16px/1.5 var(--font-body);letter-spacing:0}
+.desk__rate-copy>span,.desk__rate-copy small{font-size:12px;line-height:1.5}
+.desk__rate-copy strong{font-size:15px;font-weight:500;line-height:1.5}
+.desk__timer{font-weight:500}
+.desk__text-link,.desk__location-links button{font-family:var(--font-body);font-size:14px;font-weight:500}
+.desk__submit,.desk__secondary{font-family:var(--font-body);font-weight:500;letter-spacing:.01em}
+.desk__footnote,.desk__limits,.desk__support{font-size:13px;line-height:1.65}
+.desk__help strong{font:500 22px/1.3 var(--font-display);letter-spacing:-.02em}
+.desk__help p{font-size:14px;line-height:1.65}
+
+/* Dialogs: restrained headings, comfortable reading sizes, clear hierarchy. */
+.desk .bx-modal h2{font:500 clamp(28px,3vw,36px)/1.2 var(--font-display);letter-spacing:-.035em;margin:12px 0 16px;padding-right:30px}
+.desk .bx-kicker{font-size:10px;font-weight:500;letter-spacing:.12em}
+.bx-request__heading>p,.bx-locations>p{font-size:15px;line-height:1.6;font-weight:400}
+.bx-request__heading{margin-bottom:28px}
+.desk .bx-locations h2{margin-top:0}
+.desk .bx-request__heading h2{margin-top:0}
+.bx-request__heading{margin-bottom:24px}
+.bx-request__layout{align-items:stretch}
+#request-form{display:flex;flex-direction:column;min-width:0}
+#request-form .bx-request__submit{margin-top:auto}
+.desk .bx-summary>.bx-kicker{font-size:18px;font-weight:600;letter-spacing:0;text-transform:none;line-height:1.4}
+.bx-request .bx-request__heading>p{font-size:16px}
+.desk .bx-request .bx-form-row>label{font-size:16px}
+.desk .bx-request .bx-form-row input,.desk .bx-request .bx-form-row textarea{font-size:17px}
+.bx-request .bx-form-row>small,.bx-request .bx-consents>label,.bx-request .bx-form-note p,.bx-request .bx-summary>p{font-size:14px;line-height:1.6}
+.bx-request .bx-summary__item>span,.bx-request .bx-summary dt{font-size:14px}
+.bx-request .bx-summary dd{font-size:15px}
+.bx-request .bx-summary__item strong{font-size:20px}
+.bx-request .bx-form-note strong{font-size:15px;font-weight:600}
+.bx-request .desk__text-link{font-size:15px}
+.desk .bx-form-row>label{font:500 14px/1.5 var(--font-body)}
+.desk .bx-form-row input,.desk .bx-form-row textarea,.desk .bx-locations>input{font:400 16px/1.5 var(--font-body);letter-spacing:0;padding:14px 16px;min-height:54px}
+.bx-form-row input::placeholder,.bx-form-row textarea::placeholder,.bx-locations input::placeholder{color:#a5adbb;font-weight:400}
+.bx-form-row>small,.bx-form-row label small,.bx-consents>label,.bx-form-note p,.bx-summary>p{font-size:13px;line-height:1.65}
+.bx-summary__item>span,.bx-summary dt{font-size:12px}
+.bx-summary__item strong{font-weight:500;letter-spacing:-.015em}
+.bx-summary dd{font-size:14px;line-height:1.6}
+.bx-form-note strong{font-size:14px;font-weight:500}
+.bx-steps{font-size:12px;line-height:1.5}
+.bx-steps li[aria-current]{font-weight:500}
+.bx-document p,.bx-success p{font-size:16px;line-height:1.7}
+.bx-success__number strong{font-weight:500}
+
+.bx-locations{width:min(760px,calc(100% - 40px))}
+.bx-city-count{font-size:13px;font-weight:400;margin:18px 0 12px}
+.bx-city-list{gap:10px;align-items:stretch}
+.bx-city-option{font-family:var(--font-body);padding:16px;gap:5px;min-height:84px;justify-content:center}
+.bx-city-option strong{font-size:17px;font-weight:500;letter-spacing:-.01em;line-height:1.35}
+.bx-city-option span{font-size:13px;font-weight:400;line-height:1.5;color:#b9c1cd}
+.desk .bx-locations :focus-visible{outline:2px solid #d8bb83;outline-offset:3px}
+@media(max-width:480px){
+  .desk .bx-modal h2{font-size:28px;letter-spacing:-.03em}
+  .desk .desk__column h3{font-size:28px}
+  .desk .desk__city-button{font-size:15px}
+  .bx-city-option{padding:14px 16px;min-height:80px}
+  .bx-city-option strong{font-size:17px}
+  .bx-steps{font-size:11px}
+  .desk__help p{font-size:14px}
+}
+
+.currency-trigger { display: none; }
+
+@media (max-width: 900px) {
+  .desk--generated .desk__board { width: min(600px, calc(100% - 32px)); padding: 22px 16px; margin-top: 106px; }
+  .desk .desk__columns { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+  .desk .desk__heading { margin-bottom: 18px; }
+  .desk .desk__column h3 { font-size: 18px; margin: 0 0 6px; }
+  .desk .desk__column > .desk__type, .desk .desk__filter-label,
+  .desk .desk__currencies, .desk .desk__field select { display: none; }
+  .desk .desk__amount-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .desk .desk__field { grid-template-columns: minmax(0, 1fr) minmax(0, 49%); margin-top: 0; min-height: 54px; }
+  .desk .desk__field input { min-width: 0; width: 100%; padding: 10px; font-size: clamp(18px, 5vw, 24px); }
+  .desk .currency-trigger {
+    display: flex; align-items: center; gap: 6px; min-width: 0; min-height: 44px;
+    padding: 5px 18px 5px 9px; color: var(--cream); background: transparent;
+    border: 0; border-left: 1px solid #d8bb834a; font: 500 13px/1.2 var(--font-body); text-align: left;
+  }
+  .currency-trigger img { width: 30px; height: 30px; object-fit: contain; }
+  .currency-trigger span { min-width: 0; overflow-wrap: anywhere; }
+  .currency-trigger::after { content: ''; width: 6px; height: 6px; flex: none; border: solid #d8bb83; border-width: 0 1.5px 1.5px 0; transform: rotate(45deg); margin: -3px 1px 0 auto; }
+  .desk .desk__swap { margin: 0 auto; width: 44px; height: 44px; transform: rotate(90deg); font-size: 26px; }
+  .desk .desk__network { margin: 4px 0 0; min-height: 0; }
+  .desk .desk__quote { margin: 14px 0; }
+  .desk .currency-picker { width: min(440px, calc(100% - 24px)); padding: 22px; }
+  .desk .currency-picker[open] { display: flex; flex-direction: column; gap: 9px; max-height: 80dvh; }
+  .desk .currency-picker h2 { font-size: 24px; margin: 0 0 6px; }
+  .currency-picker label { font-size: 14px; color: #d8bb83; }
+  .currency-picker select { width: 100%; flex-shrink: 0; }
+  .currency-options { overflow-y: auto; overscroll-behavior: contain; }
+  .currency-options button {
+    display: flex; align-items: center; gap: 10px; width: 100%; min-height: 49px;
+    padding: 5px 10px; border: 0; border-bottom: 1px solid #d8bb832b;
+    background: transparent; color: var(--cream); text-align: left; font: inherit;
+  }
+  .currency-options button[aria-pressed="true"] { color: #efcf94; background: #d8bb8314; }
+  .currency-options button[aria-pressed="true"]::after { content: '✓'; margin-left: auto; }
+}

@@ -1,0 +1,214 @@
+[
+  {
+    "name": "mobile",
+    "width": 440,
+    "height": 956,
+    "layout": {
+      "sound": {
+        "x": 316,
+        "y": 24,
+        "width": 44,
+        "height": 44,
+        "top": 24,
+        "right": 360,
+        "bottom": 68,
+        "left": 316
+      },
+      "menu": {
+        "x": 372,
+        "y": 24,
+        "width": 44,
+        "height": 44,
+        "top": 24,
+        "right": 416,
+        "bottom": 68,
+        "left": 372
+      },
+      "brand": {
+        "x": 24,
+        "y": 24,
+        "width": 132.484375,
+        "height": 48,
+        "top": 24,
+        "right": 156.484375,
+        "bottom": 72,
+        "left": 24
+      },
+      "inHeader": true,
+      "overflow": false,
+      "shift": "matrix(1, 0, 0, 1, 0, 157.8)"
+    },
+    "errors": []
+  },
+  {
+    "name": "small",
+    "width": 320,
+    "height": 640,
+    "layout": {
+      "sound": {
+        "x": 196,
+        "y": 24,
+        "width": 44,
+        "height": 44,
+        "top": 24,
+        "right": 240,
+        "bottom": 68,
+        "left": 196
+      },
+      "menu": {
+        "x": 252,
+        "y": 24,
+        "width": 44,
+        "height": 44,
+        "top": 24,
+        "right": 296,
+        "bottom": 68,
+        "left": 252
+      },
+      "brand": {
+        "x": 24,
+        "y": 24,
+        "width": 132.484375,
+        "height": 48,
+        "top": 24,
+        "right": 156.484375,
+        "bottom": 72,
+        "left": 24
+      },
+      "inHeader": true,
+      "overflow": false,
+      "shift": "matrix(1, 0, 0, 1, 0, 142)"
+    },
+    "errors": []
+  },
+  {
+    "name": "phone",
+    "width": 390,
+    "height": 844,
+    "layout": {
+      "sound": {
+        "x": 266,
+        "y": 24,
+        "width": 44,
+        "height": 44,
+        "top": 24,
+        "right": 310,
+        "bottom": 68,
+        "left": 266
+      },
+      "menu": {
+        "x": 322,
+        "y": 24,
+        "width": 44,
+        "height": 44,
+        "top": 24,
+        "right": 366,
+        "bottom": 68,
+        "left": 322
+      },
+      "brand": {
+        "x": 24,
+        "y": 24,
+        "width": 132.484375,
+        "height": 48,
+        "top": 24,
+        "right": 156.484375,
+        "bottom": 72,
+        "left": 24
+      },
+      "inHeader": true,
+      "overflow": false,
+      "shift": "matrix(1, 0, 0, 1, 0, 152.2)"
+    },
+    "errors": []
+  },
+  {
+    "name": "tablet",
+    "width": 768,
+    "height": 1024,
+    "layout": {
+      "sound": {
+        "x": 644,
+        "y": 24,
+        "width": 44,
+        "height": 44,
+        "top": 24,
+        "right": 688,
+        "bottom": 68,
+        "left": 644
+      },
+      "menu": {
+        "x": 700,
+        "y": 24,
+        "width": 44,
+        "height": 44,
+        "top": 24,
+        "right": 744,
+        "bottom": 68,
+        "left": 700
+      },
+      "brand": {
+        "x": 24,
+        "y": 24,
+        "width": 132.484375,
+        "height": 48,
+        "top": 24,
+        "right": 156.484375,
+        "bottom": 72,
+        "left": 24
+      },
+      "inHeader": true,
+      "overflow": false,
+      "shift": "matrix(1, 0, 0, 1, 0, 158)"
+    },
+    "errors": []
+  },
+  {
+    "name": "desktop",
+    "width": 1440,
+    "height": 900,
+    "layout": {
+      "sound": {
+        "x": 32,
+        "y": 810,
+        "width": 64,
+        "height": 64,
+        "top": 810,
+        "right": 96,
+        "bottom": 874,
+        "left": 32
+      },
+      "menu": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "brand": {
+        "x": 48,
+        "y": 28,
+        "width": 155.125,
+        "height": 56,
+        "top": 28,
+        "right": 203.125,
+        "bottom": 84,
+        "left": 48
+      },
+      "inHeader": false,
+      "overflow": false,
+      "shift": "none"
+    },
+    "errors": []
+  },
+  {
+    "liveState": {
+      "state": "loop",
+      "scene": "matrix(1, 0, 0, 1, 0, 152.2)",
+      "flight": "matrix(1, 0, 0, 1, 0, 152.2)"
+    }
+  }
+]

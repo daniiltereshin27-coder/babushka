@@ -1,0 +1,772 @@
+[
+  {
+    "width": 320,
+    "layout": {
+      "icon": {
+        "x": 208,
+        "y": 24,
+        "width": 44,
+        "height": 44,
+        "top": 24,
+        "right": 252,
+        "bottom": 68,
+        "left": 208
+      },
+      "sound": {
+        "x": 156,
+        "y": 24,
+        "width": 44,
+        "height": 44,
+        "top": 24,
+        "right": 200,
+        "bottom": 68,
+        "left": 156
+      },
+      "menu": {
+        "x": 260,
+        "y": 24,
+        "width": 44,
+        "height": 44,
+        "top": 24,
+        "right": 304,
+        "bottom": 68,
+        "left": 260
+      },
+      "brand": {
+        "x": 16,
+        "y": 24,
+        "width": 110.828125,
+        "height": 40,
+        "top": 24,
+        "right": 126.828125,
+        "bottom": 64,
+        "left": 16
+      },
+      "contacts": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "cta": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "prev": "sound-toggle",
+      "next": "menu-toggle",
+      "overflow": false,
+      "loaded": true
+    },
+    "errors": []
+  },
+  {
+    "width": 360,
+    "layout": {
+      "icon": {
+        "x": 248,
+        "y": 24,
+        "width": 44,
+        "height": 44,
+        "top": 24,
+        "right": 292,
+        "bottom": 68,
+        "left": 248
+      },
+      "sound": {
+        "x": 196,
+        "y": 24,
+        "width": 44,
+        "height": 44,
+        "top": 24,
+        "right": 240,
+        "bottom": 68,
+        "left": 196
+      },
+      "menu": {
+        "x": 300,
+        "y": 24,
+        "width": 44,
+        "height": 44,
+        "top": 24,
+        "right": 344,
+        "bottom": 68,
+        "left": 300
+      },
+      "brand": {
+        "x": 16,
+        "y": 24,
+        "width": 110.828125,
+        "height": 40,
+        "top": 24,
+        "right": 126.828125,
+        "bottom": 64,
+        "left": 16
+      },
+      "contacts": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "cta": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "prev": "sound-toggle",
+      "next": "menu-toggle",
+      "overflow": false,
+      "loaded": true
+    },
+    "errors": []
+  },
+  {
+    "width": 375,
+    "layout": {
+      "icon": {
+        "x": 251,
+        "y": 24,
+        "width": 44,
+        "height": 44,
+        "top": 24,
+        "right": 295,
+        "bottom": 68,
+        "left": 251
+      },
+      "sound": {
+        "x": 195,
+        "y": 24,
+        "width": 44,
+        "height": 44,
+        "top": 24,
+        "right": 239,
+        "bottom": 68,
+        "left": 195
+      },
+      "menu": {
+        "x": 307,
+        "y": 24,
+        "width": 44,
+        "height": 44,
+        "top": 24,
+        "right": 351,
+        "bottom": 68,
+        "left": 307
+      },
+      "brand": {
+        "x": 24,
+        "y": 24,
+        "width": 132.484375,
+        "height": 48,
+        "top": 24,
+        "right": 156.484375,
+        "bottom": 72,
+        "left": 24
+      },
+      "contacts": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "cta": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "prev": "sound-toggle",
+      "next": "menu-toggle",
+      "overflow": false,
+      "loaded": true
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "layout": {
+      "icon": {
+        "x": 266,
+        "y": 24,
+        "width": 44,
+        "height": 44,
+        "top": 24,
+        "right": 310,
+        "bottom": 68,
+        "left": 266
+      },
+      "sound": {
+        "x": 210,
+        "y": 24,
+        "width": 44,
+        "height": 44,
+        "top": 24,
+        "right": 254,
+        "bottom": 68,
+        "left": 210
+      },
+      "menu": {
+        "x": 322,
+        "y": 24,
+        "width": 44,
+        "height": 44,
+        "top": 24,
+        "right": 366,
+        "bottom": 68,
+        "left": 322
+      },
+      "brand": {
+        "x": 24,
+        "y": 24,
+        "width": 132.484375,
+        "height": 48,
+        "top": 24,
+        "right": 156.484375,
+        "bottom": 72,
+        "left": 24
+      },
+      "contacts": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "cta": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "prev": "sound-toggle",
+      "next": "menu-toggle",
+      "overflow": false,
+      "loaded": true
+    },
+    "errors": []
+  },
+  {
+    "width": 440,
+    "layout": {
+      "icon": {
+        "x": 316,
+        "y": 24,
+        "width": 44,
+        "height": 44,
+        "top": 24,
+        "right": 360,
+        "bottom": 68,
+        "left": 316
+      },
+      "sound": {
+        "x": 260,
+        "y": 24,
+        "width": 44,
+        "height": 44,
+        "top": 24,
+        "right": 304,
+        "bottom": 68,
+        "left": 260
+      },
+      "menu": {
+        "x": 372,
+        "y": 24,
+        "width": 44,
+        "height": 44,
+        "top": 24,
+        "right": 416,
+        "bottom": 68,
+        "left": 372
+      },
+      "brand": {
+        "x": 24,
+        "y": 24,
+        "width": 132.484375,
+        "height": 48,
+        "top": 24,
+        "right": 156.484375,
+        "bottom": 72,
+        "left": 24
+      },
+      "contacts": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "cta": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "prev": "sound-toggle",
+      "next": "menu-toggle",
+      "overflow": false,
+      "loaded": true
+    },
+    "errors": []
+  },
+  {
+    "width": 768,
+    "layout": {
+      "icon": {
+        "x": 644,
+        "y": 24,
+        "width": 44,
+        "height": 44,
+        "top": 24,
+        "right": 688,
+        "bottom": 68,
+        "left": 644
+      },
+      "sound": {
+        "x": 588,
+        "y": 24,
+        "width": 44,
+        "height": 44,
+        "top": 24,
+        "right": 632,
+        "bottom": 68,
+        "left": 588
+      },
+      "menu": {
+        "x": 700,
+        "y": 24,
+        "width": 44,
+        "height": 44,
+        "top": 24,
+        "right": 744,
+        "bottom": 68,
+        "left": 700
+      },
+      "brand": {
+        "x": 24,
+        "y": 24,
+        "width": 132.484375,
+        "height": 48,
+        "top": 24,
+        "right": 156.484375,
+        "bottom": 72,
+        "left": 24
+      },
+      "contacts": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "cta": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "prev": "sound-toggle",
+      "next": "menu-toggle",
+      "overflow": false,
+      "loaded": true
+    },
+    "errors": []
+  },
+  {
+    "width": 900,
+    "layout": {
+      "icon": {
+        "x": 776,
+        "y": 24,
+        "width": 44,
+        "height": 44,
+        "top": 24,
+        "right": 820,
+        "bottom": 68,
+        "left": 776
+      },
+      "sound": {
+        "x": 720,
+        "y": 24,
+        "width": 44,
+        "height": 44,
+        "top": 24,
+        "right": 764,
+        "bottom": 68,
+        "left": 720
+      },
+      "menu": {
+        "x": 832,
+        "y": 24,
+        "width": 44,
+        "height": 44,
+        "top": 24,
+        "right": 876,
+        "bottom": 68,
+        "left": 832
+      },
+      "brand": {
+        "x": 24,
+        "y": 24,
+        "width": 132.484375,
+        "height": 48,
+        "top": 24,
+        "right": 156.484375,
+        "bottom": 72,
+        "left": 24
+      },
+      "contacts": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "cta": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "prev": "sound-toggle",
+      "next": "menu-toggle",
+      "overflow": false,
+      "loaded": true
+    },
+    "errors": []
+  },
+  {
+    "width": 901,
+    "layout": {
+      "icon": {
+        "x": 661.125,
+        "y": 34,
+        "width": 44,
+        "height": 44,
+        "top": 34,
+        "right": 705.125,
+        "bottom": 78,
+        "left": 661.125
+      },
+      "sound": {
+        "x": 32,
+        "y": 810,
+        "width": 64,
+        "height": 64,
+        "top": 810,
+        "right": 96,
+        "bottom": 874,
+        "left": 32
+      },
+      "menu": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "brand": {
+        "x": 32,
+        "y": 28,
+        "width": 155.125,
+        "height": 56,
+        "top": 28,
+        "right": 187.125,
+        "bottom": 84,
+        "left": 32
+      },
+      "contacts": {
+        "x": 578.390625,
+        "y": 46.5,
+        "width": 63.734375,
+        "height": 19,
+        "top": 46.5,
+        "right": 642.125,
+        "bottom": 65.5,
+        "left": 578.390625
+      },
+      "cta": {
+        "x": 724.125,
+        "y": 34,
+        "width": 144.875,
+        "height": 44,
+        "top": 34,
+        "right": 869,
+        "bottom": 78,
+        "left": 724.125
+      },
+      "prev": "",
+      "next": "button button--outline",
+      "overflow": false,
+      "loaded": true
+    },
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "layout": {
+      "icon": {
+        "x": 784.125,
+        "y": 34,
+        "width": 44,
+        "height": 44,
+        "top": 34,
+        "right": 828.125,
+        "bottom": 78,
+        "left": 784.125
+      },
+      "sound": {
+        "x": 32,
+        "y": 810,
+        "width": 64,
+        "height": 64,
+        "top": 810,
+        "right": 96,
+        "bottom": 874,
+        "left": 32
+      },
+      "menu": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "brand": {
+        "x": 32,
+        "y": 28,
+        "width": 155.125,
+        "height": 56,
+        "top": 28,
+        "right": 187.125,
+        "bottom": 84,
+        "left": 32
+      },
+      "contacts": {
+        "x": 701.390625,
+        "y": 46.5,
+        "width": 63.734375,
+        "height": 19,
+        "top": 46.5,
+        "right": 765.125,
+        "bottom": 65.5,
+        "left": 701.390625
+      },
+      "cta": {
+        "x": 847.125,
+        "y": 34,
+        "width": 144.875,
+        "height": 44,
+        "top": 34,
+        "right": 992,
+        "bottom": 78,
+        "left": 847.125
+      },
+      "prev": "",
+      "next": "button button--outline",
+      "overflow": false,
+      "loaded": true
+    },
+    "errors": []
+  },
+  {
+    "width": 1151,
+    "layout": {
+      "icon": {
+        "x": 858.0625,
+        "y": 34,
+        "width": 44,
+        "height": 44,
+        "top": 34,
+        "right": 902.0625,
+        "bottom": 78,
+        "left": 858.0625
+      },
+      "sound": {
+        "x": 32,
+        "y": 810,
+        "width": 64,
+        "height": 64,
+        "top": 810,
+        "right": 96,
+        "bottom": 874,
+        "left": 32
+      },
+      "menu": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "brand": {
+        "x": 48,
+        "y": 28,
+        "width": 155.125,
+        "height": 56,
+        "top": 28,
+        "right": 203.125,
+        "bottom": 84,
+        "left": 48
+      },
+      "contacts": {
+        "x": 753.0625,
+        "y": 44.5,
+        "width": 77.390625,
+        "height": 23,
+        "top": 44.5,
+        "right": 830.453125,
+        "bottom": 67.5,
+        "left": 753.0625
+      },
+      "cta": {
+        "x": 929.671875,
+        "y": 32.5,
+        "width": 173.328125,
+        "height": 47,
+        "top": 32.5,
+        "right": 1103,
+        "bottom": 79.5,
+        "left": 929.671875
+      },
+      "prev": "",
+      "next": "button button--outline",
+      "overflow": false,
+      "loaded": true
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "layout": {
+      "icon": {
+        "x": 1140.125,
+        "y": 34,
+        "width": 44,
+        "height": 44,
+        "top": 34,
+        "right": 1184.125,
+        "bottom": 78,
+        "left": 1140.125
+      },
+      "sound": {
+        "x": 32,
+        "y": 810,
+        "width": 64,
+        "height": 64,
+        "top": 810,
+        "right": 96,
+        "bottom": 874,
+        "left": 32
+      },
+      "menu": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "brand": {
+        "x": 48,
+        "y": 28,
+        "width": 155.125,
+        "height": 56,
+        "top": 28,
+        "right": 203.125,
+        "bottom": 84,
+        "left": 48
+      },
+      "contacts": {
+        "x": 1028.1875,
+        "y": 44.5,
+        "width": 77.390625,
+        "height": 23,
+        "top": 44.5,
+        "right": 1105.578125,
+        "bottom": 67.5,
+        "left": 1028.1875
+      },
+      "cta": {
+        "x": 1218.671875,
+        "y": 32.5,
+        "width": 173.328125,
+        "height": 47,
+        "top": 32.5,
+        "right": 1392,
+        "bottom": 79.5,
+        "left": 1218.671875
+      },
+      "prev": "",
+      "next": "button button--outline",
+      "overflow": false,
+      "loaded": true
+    },
+    "errors": []
+  }
+]

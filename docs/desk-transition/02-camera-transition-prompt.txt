@@ -1,0 +1,29 @@
+SETTINGS FOR THE FUTURE GENERATION
+Model: Seedance 2.5
+Mode: omni_reference
+Duration: 5 seconds
+Resolution: 1080p
+Bitrate: high
+Generate audio: false
+Aspect ratio: 16:9 after verifying consistent framing of the source and end frame
+Start image: exact selected exit frame from the accepted original loop.mp4
+End image: checked overhead image of the same scene, created with the end-frame prompt
+Do not use the user's overhead mood reference as the end image: its object layout and cat position differ.
+
+PROMPT
+Create one continuous, photorealistic camera move between the supplied start and end images. These are two camera views of the same physical room and desk, not two scenes to morph together. The start image determines the exact opening composition, character pose, prop identity and lighting. The end image determines the verified final camera position and unchanged spatial arrangement. Preserve the original image at the opening boundary as closely as possible; do not restage it before the camera moves.
+
+The camera begins in front of the seated grandmother. From 0.00 to 0.25 seconds, ease gently into motion without a pose reset. From 0.25 to 3.80 seconds, perform a smooth controlled crane-up combined with a modest forward dolly toward the clear center of the tabletop, progressively tilting down. Use a physically continuous trajectory and natural parallax. Keep a constant focal length matching the source perspective. Do not orbit, yaw, roll or rotate around the grandmother. The grandmother's side of the desk remains the far side and becomes the top of the final image.
+
+From 3.80 to 4.40 seconds, ease to a complete stop at the supplied vertical overhead composition, with the camera looking straight down and the tabletop parallel to the image plane. From 4.40 to 5.00 seconds, hold the final view completely stable, with no residual camera drift, lens breathing or geometry movement. Follow the supplied final image rather than inventing a different overhead composition.
+
+Keep exactly the same elderly woman: the same face, age, wrinkles, polka-dot headscarf, brown knitted cardigan, floral dress and leather chair. Her body stays seated in the same place; preserve the starting hand-to-cat contact without introducing a new gesture. The single long-haired tabby cat remains on her lap throughout. Let the woman and cat leave the frame or become naturally occluded as the camera tilts toward the desk. Do not lift or teleport the cat onto the table and do not place additional hands on the desktop.
+
+All stationary props retain their world-space positions, orientation, scale, shape and material throughout the shot: the blue knitted globe with its two knitting needles, wooden abacus, tea glass in its metal holder with the same spoon and tea level, black rotary telephone, and lit brass desk lamp. Their screen positions may change only through physically correct camera projection and occlusion. Preserve continuous tabletop wood grain and the same table edges. Do not slide, duplicate, replace, shrink or redistribute objects to clear space.
+
+Maintain the original warm daylight through the blinds behind the grandmother and the secondary amber light of the existing lamp. Hold the color grade, white balance and exposure consistent. Allow only physically plausible perspective-dependent reflections and highlights. Use a controlled natural focus shift toward the desktop without heavy blur hiding object changes.
+
+The final central and left work area is the bare, unobstructed wooden tabletop shown in the end image. Leave it free of a mat, text, numbers, logos, currency symbols, calculator, interface panels and buttons. A separate website layer will add the leather surface and functional calculator after the camera has stopped. Generate no dialogue, music or sound effects.
+
+AVOID
+Cuts, dissolves, fades to black, flash transitions, whip pans, handheld shake, digital zoom, fisheye distortion, 180-degree reversal, morphing, scene rearrangement, identity changes, new facial expressions, extra fingers or limbs, floating objects, moving props, a cat on the desk, duplicate needles or spoons, new notebooks, stamps or coins, lighting flicker and final-frame drift.
