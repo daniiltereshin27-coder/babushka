@@ -32,7 +32,7 @@ export function loadKey(db) {
   const fd=openSync(path,constants.O_RDONLY | constants.O_NOFOLLOW);
   try {
     const stat=fstatSync(fd);
-    if(!stat.isFile() || stat.uid!==process.getuid() || stat.size!==32) throw Error('Неверный файл ключа заявок.');
+    if(!stat.isFile() || (typeof process.getuid==='function' && stat.uid!==process.getuid()) || stat.size!==32) throw Error('Неверный файл ключа заявок.');
     fchmodSync(fd,0o600);
     return readFileSync(fd);
   } finally { closeSync(fd); }
