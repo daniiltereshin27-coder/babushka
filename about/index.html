@@ -3,14 +3,12 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#17120f"><title>О нас — Babushka Exchange</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/site-header.css">
   <script defer src="/assets/site-header.js"></script>
-  <link rel="icon" href="/assets/logo-headscarf.png"><link rel="stylesheet" href="/assets/about/about.css">
-  <link rel="stylesheet" href="/assets/about/knit/assets/demo.css">
-  <script type="module" src="/assets/about/knit/viewer.js"></script>
+  <link rel="icon" href="/assets/logo-headscarf.png">
+  <link rel="stylesheet" href="/assets/about/yarn-globe/yarn-globe.css">
+  <link rel="stylesheet" href="/assets/about/about.css">
+  <script type="module" src="/assets/about/yarn-globe/yarn-globe.js"></script>
 </head>
 <body>
 <audio id="background-music" src="/assets/background-music.mp3" autoplay loop controls preload="metadata" aria-label="Фоновая музыка"></audio>
@@ -35,45 +33,118 @@
     <a class="button button--outline" href="/#exchange">Оставить заявку</a>
   </nav>
 </header>
+
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="pin" viewBox="0 0 24 48">
+    <line x1="12" y1="18" x2="12" y2="47" stroke="#cfd3d8" stroke-width="1.6" stroke-linecap="round"/>
+    <circle cx="12" cy="11" r="9" fill="#f5b400"/>
+    <circle cx="9" cy="8" r="3" fill="#ffe08a"/>
+  </symbol>
+</svg>
+
 <main>
-  <div class="about-intro">
-    <div class="intro-heading">
-      <h1>О BABUSHKA <i>EXCHANGE</i></h1>
-      <p class="lead">BABUSHKA EXCHANGE — международный сервис обмена криптовалюты, наличных и безналичных средств. Мы объединяем разные направления обмена и способы расчёта, чтобы помогать клиентам решать повседневные и деловые финансовые задачи.</p>
+  <!-- 1. Первый экран: заголовок, призыв и глобус с булавками-преимуществами -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-text">
+      <p class="kicker">О Babushka Exchange</p>
+      <h1 id="hero-title">Связываем мир <span class="accent">надёжными нитями</span></h1>
+      <p class="lead">Международный сервис обмена криптовалюты, наличных и безналичных средств. Объединяем разные направления обмена и способы расчёта, чтобы решать повседневные и деловые финансовые задачи.</p>
+      <div class="actions">
+        <a class="btn btn--gold" href="https://t.me/baulsk" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 3-6 18-4-8-8-4 18-6Zm0 0L11 13"/></svg>
+          Написать менеджеру
+        </a>
+        <a class="btn btn--ghost" href="/#exchange">Рассчитать обмен</a>
+      </div>
+      <p class="hint">Нажмите на булавку города на глобусе — откроется расчёт для этого города.</p>
     </div>
-  <figure>
-    <div class="display" data-knit-globe role="region" aria-label="Вязаный глобус. Поворачивайте перетаскиванием или стрелками клавиатуры.">
-      <img class="knit-poster" src="/assets/about/knit/assets/poster.webp" loading="lazy" alt="Вязаный глобус с золотыми и кремовыми материками">
-    </div>
-    <figcaption hidden>
-      <span class="drag-hint">Потяните, чтобы повернуть</span>
-      <button type="button" class="play" aria-label="Приостановить вращение" title="Приостановить вращение"><span aria-hidden="true">Ⅱ</span></button>
-    </figcaption>
-  </figure>
-    <div class="intro-story">
+
+    <figure class="globe-board">
+      <div class="globe-stage">
+        <div class="display" data-yarn-globe role="region" aria-label="Вязаный глобус с городами обмена. Поворачивайте перетаскиванием или стрелками клавиатуры, нажмите на булавку города."></div>
+        <a class="city-card" href="/#exchange" hidden data-city-card>
+          <span class="city-card__label">Обмен в городе</span>
+          <strong class="city-card__name" data-city-name></strong>
+          <span class="city-card__go" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </figure>
+  </section>
+
+  <!-- 2. Как проходит обмен: три шага вдоль золотой нити -->
+  <section class="steps" aria-labelledby="steps-title">
+    <p class="kicker">Как это работает</p>
+    <h2 id="steps-title">Обмен в три <span class="accent">петли</span></h2>
+    <ol class="thread">
+      <li>
+        <span class="thread__knot" aria-hidden="true">1</span>
+        <h3>Рассчитайте обмен</h3>
+        <p>Предварительный расчёт доступен в калькуляторе: выберите направление, город и сумму.</p>
+      </li>
+      <li>
+        <span class="thread__knot" aria-hidden="true">2</span>
+        <h3>Согласуйте с менеджером</h3>
+        <p>Итоговый курс, срок его фиксации и порядок сделки обсуждаются с менеджером до перевода средств.</p>
+      </li>
+      <li>
+        <span class="thread__knot" aria-hidden="true">3</span>
+        <h3>Получите средства</h3>
+        <p>Менеджер сопровождает сделку и помогает на всех этапах — до получения средств.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- 3. Преимущества подробно: карточки, приколотые булавками -->
+  <section class="advantages" aria-labelledby="adv-title">
+    <div class="advantages__head">
+      <p class="kicker">Почему нам доверяют</p>
+      <h2 id="adv-title">Каждая сделка <span class="accent">под присмотром</span></h2>
       <p>Покупка и продажа криптовалюты, обмен цифровых активов между собой, получение наличных и банковские переводы — подбираем условия с учётом страны, валюты и суммы операции. Работаем с клиентами в Европе, Азии, Америке и других регионах мира.</p>
-      <p>Каждую сделку сопровождает менеджер. С ним вы согласовываете курс, способ расчёта и получение средств, уточняете детали и получаете помощь на всех этапах обмена.</p>
     </div>
-  </div>
-  <div class="about-details">
-    <section>
-      <h2>Международная география</h2>
-      <p>Обмен в разных странах и городах. Доступные направления можно выбрать на сайте, а возможность проведения конкретной сделки уточнить у менеджера.</p>
-    </section>
-    <section>
-      <h2>Разные финансовые задачи</h2>
-      <p>Обмен криптовалюты на наличные и безналичные средства, покупка цифровых активов и обмен одной криптовалюты на другую.</p>
-    </section>
-    <section>
-      <h2>Согласованные условия</h2>
-      <p>Предварительный расчёт доступен в калькуляторе. Итоговый курс, срок его фиксации и порядок проведения сделки обсуждаются с менеджером до перевода средств.</p>
-    </section>
-    <section>
-      <h2>Личное сопровождение</h2>
-      <p>Общение напрямую с менеджером в Telegram. Заявки принимаются круглосуточно, первый освободившийся специалист связывается с клиентом.</p>
-      <a class="contact-action" href="https://t.me/baulsk" target="_blank" rel="noopener noreferrer">Связаться с нами</a>
-    </section>
-  </div>
+    <div class="cards">
+      <article class="card" id="adv-geo">
+        <svg class="card__pin"><use href="#pin"/></svg>
+        <span class="card__num">01</span>
+        <h3>Международная география</h3>
+        <p>Обмен в разных странах и городах. Доступные направления можно выбрать на сайте, а возможность проведения конкретной сделки уточнить у менеджера.</p>
+      </article>
+      <article class="card" id="adv-tasks">
+        <svg class="card__pin"><use href="#pin"/></svg>
+        <span class="card__num">02</span>
+        <h3>Разные финансовые задачи</h3>
+        <p>Обмен криптовалюты на наличные и безналичные средства, покупка цифровых активов и обмен одной криптовалюты на другую.</p>
+      </article>
+      <article class="card" id="adv-terms">
+        <svg class="card__pin"><use href="#pin"/></svg>
+        <span class="card__num">03</span>
+        <h3>Согласованные условия</h3>
+        <p>Предварительный расчёт доступен в калькуляторе. Итоговый курс, срок его фиксации и порядок проведения сделки обсуждаются с менеджером до перевода средств.</p>
+      </article>
+      <article class="card" id="adv-manager">
+        <svg class="card__pin"><use href="#pin"/></svg>
+        <span class="card__num">04</span>
+        <h3>Личное сопровождение</h3>
+        <p>Общение напрямую с менеджером в Telegram. Заявки принимаются круглосуточно, первый освободившийся специалист связывается с клиентом.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 4. Призыв: вязаная бирка -->
+  <section class="cta" aria-labelledby="cta-title">
+    <div class="label-tag">
+      <span class="label-tag__hole" aria-hidden="true"></span>
+      <p class="kicker">Ручная работа</p>
+      <h2 id="cta-title">Обсудим <span class="accent">вашу задачу</span></h2>
+      <p>Каждую сделку сопровождает менеджер. С ним вы согласовываете курс, способ расчёта и получение средств. Заявки принимаются круглосуточно.</p>
+      <div class="actions">
+        <a class="btn btn--gold" href="https://t.me/baulsk" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 3-6 18-4-8-8-4 18-6Zm0 0L11 13"/></svg>
+          Связаться в Telegram
+        </a>
+        <a class="btn btn--ghost btn--ghost-dark" href="/#exchange">Рассчитать обмен</a>
+      </div>
+    </div>
+  </section>
 </main>
 </body>
 </html>
